@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CreaPerso</string>
+    <string name="buttonCreer">CREER</string>
+    <string name="nom">Nom</string>
+    <string name="level">LVL :</string>
+    <string name="force">FOR :</string>
+    <string name="dexterite">DEX :</string>
+    <string name="constitution">CON :</string>
+    <string name="intelligence">INT :</string>
+    <string name="sagesse">SAG :</string>
+    <string name="charisme">CHA :</string>
+    <string name="limitLevel">1 – 20</string>
+    <string name="modificateurs">Modificateurs</string>
+    <string name="reflexes">REFLEXES</string>
+    <string name="vigueur">VIGUEUR</string>
+    <string name="volonte">VOLONTE</string>
+    <string name="ca">CA</string>
+</resources>

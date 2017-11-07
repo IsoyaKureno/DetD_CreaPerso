@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.wcs.creaperso.MainActivity">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/nom"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/level"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editLevel"
+        app:layout_constraintEnd_toStartOf="@+id/editLevel" />
+
+    <EditText
+        android:id="@+id/editLevel"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/limitLevel"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textForce"
+        android:text="@string/force"
+        style="@style/Stat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editForce" />
+
+    <EditText
+        android:labelFor="@id/editForce"
+        android:id="@+id/editForce"
+        style="@style/EditStat"
+        app:layout_constraintLeft_toRightOf="@+id/textForce"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <TextView
+        android:id="@+id/textDexterite"
+        android:text="@string/dexterite"
+        style="@style/Stat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editDexterite" />
+
+    <EditText
+        android:labelFor="@id/editDexterite"
+        android:id="@+id/editDexterite"
+        style="@style/EditStat"
+        app:layout_constraintLeft_toRightOf="@+id/textDexterite"
+        app:layout_constraintTop_toBottomOf="@+id/editForce" />
+
+    <TextView
+        android:id="@+id/textConstitution"
+        android:text="@string/constitution"
+        style="@style/Stat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editConstitution" />
+
+    <EditText
+        android:labelFor="@id/editConstitution"
+        android:id="@+id/editConstitution"
+        style="@style/EditStat"
+        app:layout_constraintLeft_toRightOf="@+id/textConstitution"
+        app:layout_constraintTop_toBottomOf="@+id/editDexterite" />
+
+    <TextView
+        android:id="@+id/textIntelligence"
+        android:text="@string/intelligence"
+        style="@style/Stat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editIntelligence" />
+
+    <EditText
+        android:labelFor="@id/editIntelligence"
+        android:id="@+id/editIntelligence"
+        style="@style/EditStat"
+        app:layout_constraintLeft_toRightOf="@+id/textIntelligence"
+        app:layout_constraintTop_toBottomOf="@+id/editConstitution" />
+
+    <TextView
+        android:id="@+id/textSagesse"
+        android:text="@string/sagesse"
+        style="@style/Stat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editSagesse" />
+
+    <EditText
+        android:labelFor="@id/editSagesse"
+        android:id="@+id/editSagesse"
+        style="@style/EditStat"
+        app:layout_constraintLeft_toRightOf="@+id/textSagesse"
+        app:layout_constraintTop_toBottomOf="@+id/editIntelligence" />
+
+    <TextView
+        android:id="@+id/textCharisme"
+        android:text="@string/charisme"
+        style="@style/Stat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editCharisme" />
+
+    <EditText
+        android:labelFor="@id/editCharisme"
+        android:id="@+id/editCharisme"
+        style="@style/EditStat"
+        app:layout_constraintLeft_toRightOf="@+id/textCharisme"
+        app:layout_constraintTop_toBottomOf="@+id/editSagesse" />
+
+    <Spinner
+        android:id="@+id/spinnerArme"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCharisme" />
+
+    <Spinner
+        android:id="@+id/spinnerArmure"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerArme" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/buttonCreer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

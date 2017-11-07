@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.wcs.creaperso.ViewPerso">
+
+    <TextView
+        android:id="@+id/viewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/level"
+        app:layout_constraintEnd_toStartOf="@+id/viewLevel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textModif"
+        android:layout_width="wrap_content"
+        android:layout_height="9dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/modificateurs"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewForceModif"
+        app:layout_constraintEnd_toEndOf="@+id/viewForceModif"
+        app:layout_constraintStart_toStartOf="@+id/viewForceModif"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/textForce"
+        style="@style/Stat"
+        android:layout_marginTop="24dp"
+        android:text="@string/force"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewName" />
+
+    <TextView
+        android:id="@+id/viewForceTotal"
+        style="@style/StatTotal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textForce"
+        app:layout_constraintLeft_toRightOf="@+id/textForce" />
+
+    <TextView
+        android:id="@+id/viewForceModif"
+        style="@style/StatTotal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewForceTotal"
+        app:layout_constraintStart_toEndOf="@+id/viewForceTotal" />
+
+    <TextView
+        android:id="@+id/textDexterite"
+        style="@style/Stat"
+        android:text="@string/dexterite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForce" />
+
+    <TextView
+        android:id="@+id/viewDexteriteTotal"
+        style="@style/StatTotal"
+        app:layout_constraintLeft_toRightOf="@+id/textDexterite"
+        app:layout_constraintTop_toBottomOf="@+id/viewForceTotal" />
+
+    <TextView
+        android:id="@+id/viewDexteriteModif"
+        style="@style/StatTotal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/viewDexteriteTotal"
+        app:layout_constraintTop_toBottomOf="@+id/viewForceModif" />
+
+    <TextView
+        android:id="@+id/textConstitution"
+        style="@style/Stat"
+        android:text="@string/constitution"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDexterite" />
+
+    <TextView
+        android:id="@+id/viewConstitutionTotal"
+        style="@style/StatTotal"
+        app:layout_constraintLeft_toRightOf="@+id/textConstitution"
+        app:layout_constraintTop_toBottomOf="@+id/viewDexteriteTotal" />
+
+    <TextView
+        android:id="@+id/viewConstitutionModif"
+        style="@style/StatTotal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/viewConstitutionTotal"
+        app:layout_constraintTop_toBottomOf="@+id/viewDexteriteModif" />
+
+    <TextView
+        android:id="@+id/textIntelligence"
+        style="@style/Stat"
+        android:text="@string/intelligence"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textConstitution" />
+
+    <TextView
+        android:id="@+id/viewIntelligenceTotal"
+        style="@style/StatTotal"
+        app:layout_constraintLeft_toRightOf="@+id/textIntelligence"
+        app:layout_constraintTop_toBottomOf="@+id/viewConstitutionTotal" />
+
+    <TextView
+        android:id="@+id/viewIntelligenceModif"
+        style="@style/StatTotal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/viewIntelligenceTotal"
+        app:layout_constraintTop_toBottomOf="@+id/viewConstitutionModif" />
+
+    <TextView
+        android:id="@+id/textSagesse"
+        style="@style/Stat"
+        android:text="@string/sagesse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIntelligence" />
+
+    <TextView
+        android:id="@+id/viewSagesseTotal"
+        style="@style/StatTotal"
+        app:layout_constraintLeft_toRightOf="@+id/textSagesse"
+        app:layout_constraintTop_toBottomOf="@+id/viewIntelligenceTotal" />
+
+    <TextView
+        android:id="@+id/viewSagesseModif"
+        style="@style/StatTotal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/viewSagesseTotal"
+        app:layout_constraintTop_toBottomOf="@+id/viewIntelligenceModif" />
+
+    <TextView
+        android:id="@+id/textCharisme"
+        style="@style/Stat"
+        android:text="@string/charisme"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSagesse" />
+
+    <TextView
+        android:id="@+id/viewCharismeTotal"
+        style="@style/StatTotal"
+        app:layout_constraintLeft_toRightOf="@+id/textCharisme"
+        app:layout_constraintTop_toBottomOf="@+id/viewSagesseTotal" />
+
+    <TextView
+        android:id="@+id/viewCharismeModif"
+        style="@style/StatTotal"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/viewCharismeTotal"
+        app:layout_constraintTop_toBottomOf="@+id/viewSagesseModif" />
+
+    <TextView
+        android:id="@+id/textRefleves"
+        style="@style/TestsSauvegarde"
+        android:layout_marginTop="16dp"
+        android:text="@string/reflexes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCharisme" />
+
+    <TextView
+        android:id="@+id/viewReflexes"
+        style="@style/ViewTestsSauvegarde"
+        app:layout_constraintEnd_toEndOf="@+id/textRefleves"
+        app:layout_constraintStart_toStartOf="@+id/textRefleves"
+        app:layout_constraintTop_toBottomOf="@+id/textRefleves" />
+
+    <TextView
+        android:id="@+id/textVigueur"
+        style="@style/TestsSauvegarde"
+        android:text="@string/vigueur"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textRefleves"
+        app:layout_constraintStart_toEndOf="@+id/textRefleves" />
+
+    <TextView
+        android:id="@+id/viewVigueur"
+        style="@style/ViewTestsSauvegarde"
+        app:layout_constraintEnd_toEndOf="@+id/textVigueur"
+        app:layout_constraintStart_toStartOf="@+id/textVigueur"
+        app:layout_constraintTop_toBottomOf="@+id/textVigueur" />
+
+    <TextView
+        android:id="@+id/textVolonte"
+        style="@style/TestsSauvegarde"
+        android:text="@string/volonte"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textVigueur"
+        app:layout_constraintStart_toEndOf="@+id/textVigueur" />
+
+    <TextView
+        android:id="@+id/viewVolonte"
+        style="@style/ViewTestsSauvegarde"
+        app:layout_constraintEnd_toEndOf="@+id/textVolonte"
+        app:layout_constraintStart_toStartOf="@+id/textVolonte"
+        app:layout_constraintTop_toBottomOf="@+id/textVolonte" />
+
+    <TextView
+        android:id="@+id/textCA"
+        android:text="@string/ca"
+        style="@style/TestsSauvegarde"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textVolonte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textVolonte" />
+
+    <TextView
+        android:id="@+id/viewCA"
+        style="@style/ViewTestsSauvegarde"
+        app:layout_constraintEnd_toEndOf="@+id/textCA"
+        app:layout_constraintStart_toStartOf="@+id/textCA"
+        app:layout_constraintTop_toBottomOf="@+id/textCA" />
+
+</android.support.constraint.ConstraintLayout>
